@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 
 </head>
@@ -17,38 +17,42 @@
     <header>
 
         <!-- nav start -->
-        <nav class="max-w-[1200px] w-[100%] mx-auto">
-            <div class="mt-[30px] flex justify-center items-center">
+        <nav class="max-w-[1200px] w-full mx-auto px-4">
+            <div class="mt-[30px] flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+                <!-- LOGO -->
                 <div>
                     <img src="./img/logo.png" alt="">
                 </div>
-                <div class="ml-[200px]">
-                    <ul class="flex flex-nowrap gap-[30px] text-white">
-                        <a href="./index.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Главная</a>
-                        <a href="./menu.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Меню</a>
-                        <a href="./afisha.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Афиша</a>
+
+                <!-- MENU -->
+                <div class="flex flex-col sm:flex-row">
+                    <ul class="flex flex-col sm:flex-row gap-[15px] text-white">
+                        <a href="./index.html" class="text-lg duration-[0.5s] hover:text-[#D5621D]">Главная</a>
+                        <a href="./menu.html" class="text-lg duration-[0.5s] hover:text-[#D5621D]">Меню</a>
+                        <a href="./afisha.html" class="text-lg duration-[0.5s] hover:text-[#D5621D]">Афиша</a>
                         <a href="./Hamkorlik.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Сотрудничество</a>
-                        <a href="./gallery.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Галерея</a>
-                        <a href="./news.html"
-                            class="text-white text-lg font-normal duration-[0.5s] hover:text-[#D5621D]">Новости</a>
+                            class="text-lg duration-[0.5s] hover:text-[#D5621D]">Сотрудничество</a>
+                        <a href="./gallery.html" class="text-lg duration-[0.5s] hover:text-[#D5621D]">Галерея</a>
+                        <a href="./news.html" class="text-lg duration-[0.5s] hover:text-[#D5621D]">Новости</a>
                     </ul>
                 </div>
-                <div class=" ml-[100px] flex justify-center items-center  ">
-                    <a href="" class="inline-flex justify-center items-center
-            text-white font-normal text-lg
-            border-2 border-[#D5621D] rounded-[5px]
-            px-[30px] py-[15px] duration-[0.5s] hover:bg-[#D5621D]">
+
+
+
+                <!-- BUTTON -->
+                <div class="mt-4 lg:mt-0 lg:ml-[100px] flex justify-center items-center">
+                    <a href="#" class="inline-flex justify-center items-center
+                text-white text-lg
+                border-2 border-[#D5621D] rounded-[5px]
+                px-[30px] py-[15px] duration-[0.5s]
+                hover:bg-[#D5621D]">
                         бронирование
                     </a>
                 </div>
 
             </div>
         </nav>
+
         <!-- nav end -->
 
     </header>
@@ -60,166 +64,183 @@
     <main>
         <!-- sections start -->
 
-        <section class="max-w-[1200px] w-[100%] mx-auto mt-[63px]">
-            <div>
-                <div>
-                    <div class="relative">
-                        <img src="./img/bg fon.png" alt="" class="w-[854px] h-[540px]">
+        <section class="max-w-[1200px] w-full mx-auto mt-16 px-4 sm:px-0">
+            <div class="relative flex flex-col sm:flex-row sm:items-start sm:justify-between">
+
+                <!-- Background + Text -->
+                <div class="sm:w-[854px] relative sm:block hidden">
+                    <img src="./img/bg fon.png" alt="" class="w-full sm:w-[854px] h-auto sm:h-[540px] object-cover">
+                    <a href=""
+                        class="absolute duration-[0.5s] top-1/4 left-4 sm:left-16 font-bold text-[18px] text-[#210E09] bg-white rounded-[5px] pt-2 pr-5 pb-2 pl-5 hover:bg-[#210E09] hover:text-white">Since
+                        1996</a>
+                    <h1
+                        class="absolute top-1/3 left-4 sm:left-16 font-bold text-[32px] sm:text-[40px] text-white leading-[1.2]">
+                        True. Fontanka. <br> Underground.
+                    </h1>
+                </div>
+
+                <!-- Cards -->
+                <div class="bg-[#D5621D1A] w-full sm:w-[325px] sm:h-[542px] mt-8 sm:mt-0 relative">
+                    <div class="flex space-x-10 absolute top-3 left-3 sm:left-12">
+                        <h2 class="font-bold text-lg text-white leading-[150%] tracking-[5%]">Ближайшие</h2>
+                        <h2 class="font-bold text-lg text-white leading-[150%] tracking-[5%]">скоро</h2>
                     </div>
-                    <div class="absolute mt-[-225px] ml-[60px]">
-                        <a href="" class="font-bold text-[18px] text-[#210E09] leading-5 bg-white rounded-[5px] pt-2 pr-[20px] pb-[7px]
-                        pl-[20px] duration-[0.5s] hover:bg-[#210E09] hover:text-white">Since 1996</a>
-                    </div>
-                    <div class="absolute ml-[60px] mt-[-165px]">
-                        <h1 class="font-bold space-y-[40px] text-[40px] text-white leading-150%">True. Fontanka. <br>
-                            Underground. </h1>
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 mt-32 sm:mt-[100px] px-3 sm:px-0">
+                        <img src="./img/card1.png" alt="" class="object-cover rounded-lg">
+                        <img src="./img/card2.png" alt="" class="object-cover rounded-lg">
+                        <img src="./img/card3.png" alt="" class="object-cover rounded-lg">
+                        <img src="./img/card4.png" alt="" class="object-cover rounded-lg">
                     </div>
                 </div>
 
-                <div class="bg-[#D5621D1A] w-[325px] h-[542px] ml-[880px] my-[-540px] relative">
-                    <div class="flex ml-[48px] mt-[12px] absolute">
-                        <h2 class="font-bold text-lg text-[#FFFFFF] leading-[150%] tracking-[5%]">Ближайшие</h2>
-                        <h2 class="font-bold text-lg text-[#FFFFFF] leading-[150%] tracking-[5%] ml-[45px]">скоро</h2>
-                    </div>
-                    <div class="grid grid-cols-2 gap-6 absolute mt-[100px]">
-
-                        <img src="./img/card1.png" alt="" class=" object-cover rounded-lg">
-                        <img src="./img/card2.png" alt="" class=" object-cover rounded-lg">
-                        <img src="./img/card3.png" alt="" class=" object-cover rounded-lg">
-                        <img src="./img/card4.png" alt="" class=" object-cover rounded-lg">
-
-                    </div>
-                </div>
             </div>
         </section>
+
+
 
         <!-- sections end -->
 
         <!-- section 2 start -->
 
         <section class="max-w-[1200px] w-[100%] mx-auto mt-[63px]">
-            <div class="relative">
-                <div class="mt-[700px] ml-[500px]">
+            <div class="relative mt-[-600px]">
+                <div class="mt-[700px] text-center sm:">
                     <div>
                         <a href="" class="font-bold text-[14px] leading-150% tracking-5% text-[#210E09] bg-white rounded-[5px]
                         pt-[10px] pr-[20px] pb-[9px] pl-[20px]">Top “Manhattan” menu</a>
                     </div>
-                    <div class="ml-[40px] mt-[40px]">
+                    <div class="mt-[40px]">
                         <h1 class="font-bold text-white text-[40px] leading-150% tracking-5%">Кухня</h1>
                     </div>
                 </div>
+                <div class="flex flex-col sm:flex-row sm:flex-wrap gap-6 px-4 sm:px-0">
+                    <div class="ml-[100px] mt-[80px]">
 
-                <div class="ml-[100px] mt-[80px]">
-
-                    <div>
-                        <img src="./img/menu card1.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                        <div>
+                            <img src="./img/menu card1.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
                             hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">200 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Placerat
+                                id
+                                auctor nunc id vel vel curabitur. <br> Urna fames maecenas leo elit diam nibh elit.</p>
                         </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">200 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Placerat id
-                            auctor nunc id vel vel curabitur. <br> Urna fames maecenas leo elit diam nibh elit.</p>
+
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card2.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                            hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">400 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Pharetra
+                                morbi
+                                purus hendrerit risus vel <br> consequat nunc, sed. Pharetra nulla imperdiet.</p>
+                        </div>
+
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card3.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                            hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">300 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">In mauris,
+                                elit nisl sed. Nulla accumsan <br> vestibulum sed velit sagittis quis accumsan.</p>
+                        </div>
+
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card4.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                            hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">100 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">In cras
+                                pharetra aliquet laoreet. Lectus nisi <br> ante felis quam pharetra in maecenas ut
+                                felis.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card2.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                    <div class="ml-[100px] mt-[90px]">
+
+                        <div>
+                            <img src="./img/menu card5.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
                             hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">600 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Elit
+                                imperdiet
+                                faucibus euismod tortor risus <br> volutpat molestie morbi sed. Porta ac eu.</p>
                         </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">400 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Pharetra morbi
-                            purus hendrerit risus vel <br> consequat nunc, sed. Pharetra nulla imperdiet.</p>
-                    </div>
 
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card3.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card6.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
                             hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">200 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Leo in
+                                arcu in
+                                gravida vivamus scelerisque non. <br> Euismod nec amet amet egestas nisl iaculis.</p>
                         </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">300 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">In mauris,
-                            elit nisl sed. Nulla accumsan <br> vestibulum sed velit sagittis quis accumsan.</p>
-                    </div>
 
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card4.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card7.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
                             hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">500 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Duis
+                                quisque
+                                tristique nulla cursus justo, etiam <br> viverra nulla cras. Consectetur eget augue.</p>
                         </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">100 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">In cras
-                            pharetra aliquet laoreet. Lectus nisi <br> ante felis quam pharetra in maecenas ut felis.
-                        </p>
-                    </div>
 
-                </div>
-
-                <div class="ml-[650px] mt-[-590px]">
-
-                    <div>
-                        <img src="./img/menu card5.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
+                        <div class="mt-[56px]">
+                            <img src="./img/menu card8.png" alt="">
+                            <div class="flex ml-[130px] mt-[-110px]">
+                                <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
+                                <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
                             hover:bg-orange-500">550 ₽ </h2>
+                            </div>
+                            <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">300 гр
+                            </p>
+                            <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Integer
+                                dolor
+                                et sed tempus non. Adipiscing <br> viverra in viverra quisque pretium. Commodo.
+                            </p>
                         </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">600 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Elit imperdiet
-                            faucibus euismod tortor risus <br> volutpat molestie morbi sed. Porta ac eu.</p>
-                    </div>
 
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card6.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
-                            hover:bg-orange-500">550 ₽ </h2>
-                        </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">200 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Leo in arcu in
-                            gravida vivamus scelerisque non. <br> Euismod nec amet amet egestas nisl iaculis.</p>
                     </div>
-
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card7.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
-                            hover:bg-orange-500">550 ₽ </h2>
-                        </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">500 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Duis quisque
-                            tristique nulla cursus justo, etiam <br> viverra nulla cras. Consectetur eget augue.</p>
-                    </div>
-
-                    <div class="mt-[56px]">
-                        <img src="./img/menu card8.png" alt="">
-                        <div class="flex ml-[130px] mt-[-110px]">
-                            <h2 class="font-bold text-white text-[18px] leading-150% tracking-5%">Amet donec. </h2>
-                            <h2 class="border-2 border-orange-500 text-white px-5 py-2 rounded-lg duration-[0.5s] font-semibold ml-[65px]
-                            hover:bg-orange-500">550 ₽ </h2>
-                        </div>
-                        <p class="font-normal text-[14px] leading-150% text-[#D5621D] ml-[130px] mt-[-10px]">300 гр</p>
-                        <p class="text-white font-semibold text-[14px] leading-150% ml-[130px] mt-[10px]">Integer dolor
-                            et sed tempus non. Adipiscing <br> viverra in viverra quisque pretium. Commodo.
-                        </p>
-                    </div>
-
                 </div>
 
                 <button class="absolute left-6 top-1/2 -translate-y-1/2
          bg-orange-500 hover:bg-orange-600
          w-12 h-12 rounded-xl
          flex items-center justify-center
-         text-white text-2xl mt-[89px]">
+         text-white text-2xl mt-[89px] sm:block hidden">
                     ‹
                 </button>
 
@@ -227,15 +248,18 @@
          bg-orange-500 hover:bg-orange-600
          w-12 h-12 rounded-xl
          flex items-center justify-center
-         text-white text-2xl mt-[89px]  ">
+         text-white text-2xl mt-[89px]  sm:block hidden">
                     ›
                 </button>
             </div>
-            <div class="absolute mt-[100px]">
-                <a href="./menu.html"
-                    class="font-bold text-[18px] leading-150% tracking-5% duration-[0.5s] bg-[#D5621D] rounded-[5px] pt-[15px] pl-[30px] pr-[30px] pb-[15px] gap-10 text-white ml-[500px] hover:bg-[#210E09] hover:border-2 border-[#D5621D]">все
-                    меню</a>
+            <div class="absolute mt-[100px] w-full flex justify-center lg:ml-[-200px]">
+                <a href="./menu.html" class="font-bold text-[18px] leading-[150%] tracking-[5%] duration-500 bg-[#D5621D] rounded-[5px] 
+              py-[15px] px-[30px] text-white hover:bg-[#210E09] hover:border-2 border-[#D5621D]
+              sm:ml-0 sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                    все меню
+                </a>
             </div>
+
         </section>
 
         <!-- section 2 end -->
@@ -558,25 +582,29 @@
             </div>
             <div class="w-[316px] h-px bg-white my-8 mt-[-250px] ml-[50px]"></div>
             <div class="ml-[50px] mt-[25px] absolute">
-            <div>
-                <h2 class="font-bold text-[18px] leading-150% tracking-5% text-[#FFFFFF] uppercase">
-                    директор</h2>
-                <p class="font-normal text-[14px] leading-150% text-white mt-[20px]">Лидия Эмильевна, +7(921) 963-55-50
-                </p>
-            </div>
-            <div>
-                <h2 class="font-bold text-[18px] leading-150% tracking-5% text-[#FFFFFF] mt-[35px] uppercase">
-                    арт-директор</h2>
-                <p class="font-normal text-[14px] leading-150% text-white mt-[20px]">Илиния Ионашко, +7(981) 989-43-30
-                </p>
-            </div>
-            <div class="ml-[400px] mt-[-635px]">
-                <img src="./img/footer card.png" alt="">
-            </div>
+                <div>
+                    <h2 class="font-bold text-[18px] leading-150% tracking-5% text-[#FFFFFF] uppercase">
+                        директор</h2>
+                    <p class="font-normal text-[14px] leading-150% text-white mt-[20px]">Лидия Эмильевна, +7(921)
+                        963-55-50
+                    </p>
+                </div>
+                <div>
+                    <h2 class="font-bold text-[18px] leading-150% tracking-5% text-[#FFFFFF] mt-[35px] uppercase">
+                        арт-директор</h2>
+                    <p class="font-normal text-[14px] leading-150% text-white mt-[20px]">Илиния Ионашко, +7(981)
+                        989-43-30
+                    </p>
+                </div>
+                <div class="ml-[400px] mt-[-635px]">
+                    <img src="./img/footer card.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Footer end -->
+
 </body>
+
 </html>
